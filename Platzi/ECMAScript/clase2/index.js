@@ -1,3 +1,5 @@
+//DEFAULT PARAMS Y CONCATENACIÓN
+
 function newFunction(name,age,country){
     var name = name || 'sebastian';
     var age = age || 32;
