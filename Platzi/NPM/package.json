@@ -8,5 +8,14 @@
   },
   "keywords": [],
   "author": "Sebastian Abril <sebastianabril6@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {
+    "date-fns": "^2.27.0"
+  },
+  "optionalDependencies": {
+    "eslint": "^8.5.0"
+  }
 }
