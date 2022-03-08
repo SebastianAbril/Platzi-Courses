@@ -3,6 +3,25 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import reactDom from 'react-dom';
+
+// APUNTES CLASE PLATZI
+const e = React.createElement;
+
+function App() {
+  return (
+    React.createElement('h1', {id: 'title'}, 'Oli React')
+  );
+  }
+
+
+
+reactDom.render(e());
+
+
+
+
+
 
 ReactDOM.render(
   <React.StrictMode>
