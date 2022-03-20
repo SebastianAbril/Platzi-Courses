@@ -1,0 +1,36 @@
+
+.TodoItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px 30px;
+    
+   
+  }
+  .TodoItem-p{
+    margin: 24px 0 24px 24px;
+    width: calc(100%-120px);
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  .TodoItem-p--complete{
+    text-decoration: line-through;
+  }
+
+  .Icon{
+    cursor:pointer;
+    height: 48px;
+    width: 48px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .Icon-check--active{
+    color: #4caf50;
+  }
+  
+  .Icon-delete:hover{
+    color: red;
+  }

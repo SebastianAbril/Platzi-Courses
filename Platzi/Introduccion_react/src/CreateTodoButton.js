@@ -1,6 +1,6 @@
 import React from 'react';
 
-function CreateTodoButton() {
+function CreateTodoButton(props) {
 
     const onClickButton = (msg) => {
         alert(msg);
@@ -8,7 +8,7 @@ function CreateTodoButton() {
     return (
         <button
             className="CreateTodoButton"
-            onClick={ () => onClickButton('pepepepe')}
+            onClick={ () => onClickButton('Aqui se deberia abrir el modal')}
         >+</button>
     )
 }
