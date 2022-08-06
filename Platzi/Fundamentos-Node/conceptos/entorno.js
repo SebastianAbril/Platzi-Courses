@@ -20,5 +20,13 @@ de entorno de manera sencilla.
 let nombre = process.env.NOMBRE || 'Sin nombre';
 let web = process.env.WEB || 'no tengo web';
 
-console.log('Hola '+ nombre)
-console.log('Mi web es '+ web)
+console.log('Hola '+ nombre);
+console.log('Mi web es '+ web);
+
+console.log('Otras cosas...');
+
+//NODEMON es un gestor de Node para actualizar automaticamente.
+//Para instalarlo: npm install -g nodemon
+
+//PARA PRODUCCION: PM2 npm install pm2 -g, es mas complejo y mas
+// pesado que nodemon 
