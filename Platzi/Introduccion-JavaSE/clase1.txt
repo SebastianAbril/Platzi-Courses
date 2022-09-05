@@ -1,0 +1,12 @@
+¿Que es JAVA?
+- Java es un lenguaje de programación
+- Java es un lenguaje de programación de alto nivel
+- Es Multiplataforma (puede correrse en diferentes sistemas operativos)
+- Java tiene dos categorías:
++ Standard Edition.- para construir aplicaciones de escritorio o consola
++ Enterprise Edition.- para que las empresas trabajen aplicaciones web de última generación
+- Java sigue filosofía de Write Once, Run Anywhere (WORA), por lo que todo lo que aprendas en Java SE lo podrás aplicar también con Java EE
+
+HISTORIA
+- Fue creado en 1991 por James Gosling mientras trabajaba en Sun Microsystems
+- Fue comprada por ORACLE en 2009
