@@ -1,0 +1,5 @@
+REQUIREMENTS
+-Computer: Mac or Windows.
+-Code editor: ATOM, VSCode, Sublime.
+- Basic React JS.
+

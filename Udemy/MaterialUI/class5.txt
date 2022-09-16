@@ -1,0 +1,5 @@
+As you may know, Material-UI has recently updated to a new major version 5 and rebranded as MUI. MUI v5 introduces syntax changes that differ from the version shown here in the course. Because of that if you want to follow along with the course as shown in the lectures then you must install the same version as I used during recording.
+
+So in the next lecture when you install Material-UI please run the command npm install --save @material-ui/core@4.4.0 and make sure to add the @4.4.0 as that will specify the correct package version.
+
+Most of the components and concepts you'll learn in this course will transfer to the latest version so it's still very worthwhile following along with the course. The course will teach you everything you need to know to have a head start when you get started learning the latest version. I am currently working on new content for MUI v5 so stay tuned for that early next year!
