@@ -1,0 +1,15 @@
+CLASS 1.
+Teacher: Zachary Reece
+About the teacher:
+    - Started coding at 9 years old.
+    - Watched the React ecosystem develop.
+    - Started custom software company.
+
+WHY I MADE THIS COURSE:
+    - Few resources for Material-UI.
+    - Felt like I knew React but was still missing something.
+    - One of the most important things I learned
+
+WHAT YOU'LL GET FROM THE COURSE.
+    - Blur the line between design and development.
+    - Build an website you can imagine.

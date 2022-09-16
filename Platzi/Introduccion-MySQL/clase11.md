@@ -1,0 +1,1 @@
+# Tipos de columnas usando / Creación de la tabla clientes.
