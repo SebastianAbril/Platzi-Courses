@@ -1,0 +1,29 @@
+Why MATERIAL UI?
+Implement High Fidelity Designs with Material-UI & React JS
+
+PROBLEM
+React, Redux, understand components, state, props and JSX. And you want to
+understand how they fit together?
+
+- Creating consistent components.
+- Don't reinvent the wheel.
+
+SOLUTION
+
+- Standardized components and funcionality.
+Options:
+-Option1: Bootstrap/React-Bootstrap.
+    - Oldest.
+    - Not originally for React.
+    - Somewhat restrictive.
+-Option2: Semantic-UI/Semantic-UI-React
+    - Also ported.
+    - Not React-specific styling.
+    - Dependent on main library.
+-Option3: MATERIAL-UI
+    - Explicitly built for React.
+    - Extreme flexibility.
+    - Maintains consistency.
+    - Active development.
+    - Advanced feature support.
+
