@@ -1,0 +1,15 @@
+IMAGE OPTIMIZATION.
+
+-SVG: ALWAYS USE SVG WHEN YOU CAN.
+    -SVG is Responsive. (Scalable Vector graphic).
+    -Small.
+    -Customizable.
+    
+If you can't use SVG, then use:
+- JPG/PNG
+-  https://pagespeed.web.dev/   // Test the performance of your website.
+- USE: www.tinyjpg.com
+
+For SVG: https://jakearchibald.github.io/svgomg/
+
+Optimize with those webpages allt the images(SVG, JPG/PNG)
