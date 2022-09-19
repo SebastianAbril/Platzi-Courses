@@ -1,11 +1,16 @@
+import { ThemeProvider} from '@mui/material/styles';
 import Header from "../components/ui/Header";
+import theme from "./ui/Theme";
 
 function App() {
   return (
-    <div className="App">
+    <ThemeProvider theme={theme}>
       <Header />
       HELLO
-    </div>
+    </ThemeProvider>
+      
+      
+    
   );
 }
 
