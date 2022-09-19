@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography"
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 
 
+
 function ElevationScroll(props) {
     const { children} = props;
     
@@ -23,6 +24,7 @@ function ElevationScroll(props) {
 
 export default function Header(props){
     return (
+      <>
         <ElevationScroll>
         <AppBar position="fixed" color="primary">
             <Toolbar>
@@ -33,6 +35,9 @@ export default function Header(props){
             </Toolbar>
         </AppBar>
         </ElevationScroll>
+        <Toolbar />
+        <div>Hello there</div>
+        </>
     )
 }
 
