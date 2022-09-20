@@ -2,8 +2,34 @@ import React from 'react';
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import useScrollTrigger from '@mui/material/useScrollTrigger';
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import theme from "./Theme";
+
 
 import logo from "../../assets/logo.svg"
+
+const styles = {
+  toolbarMargin:{
+    ...theme.mixins.toolbar,
+    marginBottom: "3em"
+  },
+  logo:{
+    height: "7em"
+  },
+  tab: {
+    ...theme.typography.tab,
+    color: "white",
+    minWidth: 10,
+    marginLeft: "25px"
+  },
+  tabContainer:{
+    marginLeft:"auto"
+  }
+
+}
+
+
 
 function ElevationScroll(props) {
     const { children} = props;
@@ -22,18 +48,24 @@ function ElevationScroll(props) {
 
 
 export default function Header(props){
+    console.log(styles.toolbarMargin)
     return (
       <>
         <ElevationScroll>
         <AppBar position="fixed" color="primary">
             <Toolbar disableGutters>
-              <img style={{height:"7em"}} alt="company logo" src={logo} />
-                
+              <img style={styles.logo} alt="company logo" src={logo} />
+              <Tabs sx={styles.tabContainer} >
+                <Tab sx={styles.tab} label="Home" />
+                <Tab sx={styles.tab} label="Services" />
+                <Tab sx={styles.tab} label="The Revolution" />
+                <Tab sx={styles.tab} label="About Us" />
+                <Tab sx={styles.tab} label="Contact Us" />
+              </Tabs>
             </Toolbar>
         </AppBar>
         </ElevationScroll>
-        <Toolbar sx={{marginBottom:"3em"}} />
-        <div>Hello there</div>
+         <div style={styles.toolbarMargin} />
         </>
     )
 }
