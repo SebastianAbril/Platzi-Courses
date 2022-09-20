@@ -5,6 +5,7 @@ import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import theme from "./Theme";
+import Button from "@mui/material/Button";
 
 
 import logo from "../../assets/logo.svg"
@@ -25,11 +26,17 @@ const styles = {
   },
   tabContainer:{
     marginLeft:"auto"
+  },
+  button:{
+    ...theme.typography.estimate,
+    borderRadius:"50px",
+    marginLeft:"50px",
+    marginRight:"25px",
+    height: "45px",
+    
   }
 
 }
-
-
 
 function ElevationScroll(props) {
     const { children} = props;
@@ -62,6 +69,10 @@ export default function Header(props){
                 <Tab sx={styles.tab} label="About Us" />
                 <Tab sx={styles.tab} label="Contact Us" />
               </Tabs>
+
+              <Button variant="contained" color="secondary" sx={styles.button}>
+                Free Estimate
+              </Button>
             </Toolbar>
         </AppBar>
         </ElevationScroll>
