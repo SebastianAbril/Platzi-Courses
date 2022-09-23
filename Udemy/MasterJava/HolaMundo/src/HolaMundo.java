@@ -26,4 +26,10 @@ public class HolaMundo {
         System.out.println("nombre = " + nombre);
     }
 }
-
+// para comentar una linea
+/* para comentar varias
+lineas:
+una variable debe comenzar con una letra, no puede comenzar con un numero. Se
+vale el guion bajo _
+evitar acentos y eñes
+ */
