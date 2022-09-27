@@ -1,0 +1,9 @@
+JDK (Java Development Kit)
+- Java Runtime Environment JRE
+- Compilador de Java
+- API de desarrollo
+
+El JDK o Java Development Kit se compone de:
+• Java Runtime Environment (JRE): la máquina virtual de Java, es lo que ayuda a que sean programas multiplataformas.
+• Compilador de Java: se encarga de traducir el código a algo que la maquina pueda entender.
+• APIs de desarrollo: una base de código lista para ayudarnos a desarrollar.
