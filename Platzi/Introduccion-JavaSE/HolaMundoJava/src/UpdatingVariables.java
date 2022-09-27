@@ -24,3 +24,10 @@ public class UpdatingVariables {
         System.out.println(employeeName);
     }
 }
+
+/*
+Nombres en Java
+    - Sensible a mayúsculas y minúsculas
+    - Comenzar con letra, $ o "_"
+
+ */
