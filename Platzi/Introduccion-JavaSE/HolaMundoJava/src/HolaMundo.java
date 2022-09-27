@@ -12,3 +12,7 @@ public class HolaMundo {
 
 Por lo tanto Java es compilado e interpretado
  */
+
+/*
+Las variables en Java se compodran de un nombre y un valor
+ */
