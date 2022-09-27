@@ -16,6 +16,10 @@ public class NamingJava {
         int MAX_WIDTH = 9999;
         int MIN_WIDTH = 1;
 
+        //Lower Camel Case
+        String fullName = "Irene Ahagi Shelgoe";
+        int sizeInCentimeters = 26;
+
 
     }
 }
@@ -23,4 +27,17 @@ public class NamingJava {
 /*
 Letras posteriores pueden ser letras, numeros, $ y "_"
 Las constantes se escriben en mayúsculas y contienen "_".
+ */
+
+/*
+TECNICA DE NAMING: CAMEL CASE
+
+-Upper Camel Case: para clases e interfaces. example: public class Connection{
+}
+-Lower Camel Case: para  variables. example: String isAvailable = true;
+-Snake Case: para constantes
+public class Config{
+	public static final int MAX_SIZE = 30;
+}
+
  */
