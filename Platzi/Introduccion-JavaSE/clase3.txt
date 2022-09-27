@@ -1,0 +1,19 @@
+HERRAMIENTAS MAS USADAS DE JAVA
+En cuanto a servidor para proyectos web hay dos tipos de ambiente:
+- Maven
+- Gradle
+En cuanto a reglas de trabajo:
+- Spring
+
+Spring con Hibernate (es un OMR)
+
+IDE: Entorno de Desarrollo Integrado
+Es un entorno de programación que ha sido empaquetado con un programa de aplicación.
+- Editor de código.
+- Compilador.
+- Depurador.
+- Constructor de interfaz gráfica.
+
+NetBeans
+eclipse
+Intellij IDEA
