@@ -30,3 +30,8 @@ public class Casting {
 
     }
 }
+
+/*
+JAR: Java ARchive
+CÓDIGO COMPILADO DE JAVA
+ */
