@@ -5,6 +5,17 @@ public class DataTypes {
 
         double nD = 123.456;
         float nF = 123.456F;
+
+        var salary = 1000; // int
+        //pension 3%
+        var pension = salary * 0.03; //double
+        var totalSalary = salary - pension; //double
+        System.out.println(salary);
+        System.out.println(pension);
+        System.out.println(totalSalary);
+
+        var employeeName = "Anahi Salgado";
+        System.out.println("EMPLOYEE: "+employeeName + " SALARY: "+ totalSalary);
     }
 }
 
@@ -20,4 +31,11 @@ Enteros:
 Punto Flotante o decimal
 -float (4 bytes)
 -double (8 bytes)
+
+Para char se pone comilla simple ''
+
+Lógicos:
+-boolean: rango, true o false.
+Después de Java 10 se puede usar var:
+var miVariable = "hola";
  */
