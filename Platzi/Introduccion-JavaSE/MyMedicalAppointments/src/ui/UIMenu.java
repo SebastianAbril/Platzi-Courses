@@ -65,3 +65,8 @@ public class UIMenu {
         }while (response != 0);
     }
 }
+
+/**
+ * SOBRECARGA : a veces necesitamos que dos o más métodos tengan el mismo nombre pero
+ * con diferentes argumentos
+ */
