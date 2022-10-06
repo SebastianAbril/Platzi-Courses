@@ -4,13 +4,16 @@ public class Main {
     public static void main(String[] args) {
 
        // showMenu();
-       // Doctor myDoctor = new Doctor("Irina Abril", "Pediatria");
-       // System.out.println(myDoctor.name);
-       // System.out.println(myDoctor.speciality);
+       Doctor myDoctor = new Doctor("Irina Abril", "Pediatria");
+       System.out.println(myDoctor.name);
+       System.out.println(myDoctor.speciality);
 
-        Patient pepito = new Patient();
-        Patient juanPerez = new Patient( "Juan", "juan@gmail.com", "Avenida siempre viva",  "311625847",  "21/98/1992", 94.32 ,  1.80, "A+");
-        System.out.println(juanPerez);
+
+        Patient juanPerez = new Patient( "Juan", "juan@gmail.com");
+
+
+
+
     }
 
 
