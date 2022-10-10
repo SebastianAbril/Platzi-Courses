@@ -4,15 +4,39 @@ public class Main {
     public static void main(String[] args) {
 
        // showMenu();
-       Doctor myDoctor = new Doctor("Irina Abril", "Pediatria");
+       /* Doctor myDoctor = new Doctor("Irina Abril", "Pediatria");
        System.out.println(myDoctor.name);
-       System.out.println(myDoctor.speciality);
+       System.out.println(myDoctor.speciality); */
 
-
+/*
         Patient juanPerez = new Patient( "Juan", "juan@gmail.com");
+        juanPerez.setWeight(78.9);
+        System.out.println(juanPerez.getWeight());
 
+        juanPerez.setPhoneNumber("334553463464");
 
+*/
+    Patient patientOne = new Patient("Ramira", "ramira@gmail.com");
+    Patient patientTwo = new Patient("Angelica" , "angelica@gmail.com");
 
+        System.out.println(patientOne);
+        System.out.println(patientTwo);
+
+        System.out.println(patientOne.getName());
+        System.out.println(patientTwo.getName());
+
+        patientTwo = patientOne;
+        System.out.println(patientOne.getName());
+        System.out.println(patientTwo.getName());
+
+        System.out.println();
+        System.out.println(patientOne);
+        System.out.println(patientTwo);
+
+        System.out.println();
+        patientTwo.setName("SebastianYCatalina");
+        System.out.println(patientOne.getName());
+        System.out.println(patientTwo.getName());
 
     }
 
