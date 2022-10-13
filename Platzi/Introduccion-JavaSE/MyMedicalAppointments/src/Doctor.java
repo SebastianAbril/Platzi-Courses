@@ -1,10 +1,9 @@
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Doctor {
+public class Doctor extends User {
     //Atributos
     static int id = 0; //Autoincrement
-    String name;
     String speciality;
 
     private int id_availableAppointment;
@@ -13,20 +12,24 @@ public class Doctor {
     // Available Appointment
 
     //Comportamientos
-    Doctor(){
-        System.out.println("Construyendo el objeto Doctor:");
 
+    Doctor(String name, String email, String speciality) {
+        super(name,email);
+        System.out.println("El nombre del Doctor asignado es: " + name);
+        this.speciality = speciality;
     }
-    Doctor(String name, String speciality){
-        System.out.println("El nombre del Doctor asignado es: " + name );
-        id++;
-        this.name = name;
+
+    public String getSpeciality() {
+        return speciality;
+    }
+
+    public void setSpeciality(String speciality) {
         this.speciality = speciality;
     }
 
     //Comportamientos
     public void showName(){
-        System.out.println(name);
+        System.out.println(getName());
     }
     public void showId(){
         System.out.println("ID Doctor: "+id);
@@ -38,6 +41,11 @@ public class Doctor {
     }
     public ArrayList<AvailableAppointment> getAvailableAppointments(){
         return availableAppointments;
+    }
+
+    @Override
+    public String toString(){
+        return super.toString() + "\nSpeciality: "+speciality+"\nAvailable "+availableAppointments.toString();
     }
     public static class AvailableAppointment{
         private int id;
@@ -65,7 +73,14 @@ public class Doctor {
         public void setTime(String time) {
             this.time = time;
         }
+
+        @Override
+        public String toString(){
+            return "Available Appointments \nDate: " + date + "\nTime: "+time;
+        }
     }
+
+
 
 }
 
@@ -75,4 +90,6 @@ public class Doctor {
  * tipo de objeto - Nombre del objeto
  *
  * myDoctor = new Doctor();
+ *
+ * Los metodos con final o static no se pueden sobre escribir
  */
