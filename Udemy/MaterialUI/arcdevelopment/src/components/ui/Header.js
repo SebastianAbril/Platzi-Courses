@@ -21,7 +21,7 @@ const styles = {
   tab: {
     ...theme.typography.tab,
     color: "white",
-    minWidth: 10,
+    minWidth: "10px",
     marginLeft: "25px"
   },
   tabContainer:{
@@ -62,8 +62,8 @@ export default function Header(props){
         <AppBar position="fixed" color="primary">
             <Toolbar disableGutters>
               <img style={styles.logo} alt="company logo" src={logo} />
-              <Tabs sx={styles.tabContainer} >
-                <Tab sx={styles.tab} label="Home" />
+              <Tabs value={0} sx={styles.tabContainer } >
+                <Tab sx={styles.tab} label="Home" color="white" />
                 <Tab sx={styles.tab} label="Services" />
                 <Tab sx={styles.tab} label="The Revolution" />
                 <Tab sx={styles.tab} label="About Us" />
@@ -75,8 +75,10 @@ export default function Header(props){
               </Button>
             </Toolbar>
         </AppBar>
+        
         </ElevationScroll>
-         <div style={styles.toolbarMargin} />
+        <Toolbar style={styles.toolbarMargin} />
+          {/* <div style={styles.toolbarMargin} /> */}
         </>
     )
 }

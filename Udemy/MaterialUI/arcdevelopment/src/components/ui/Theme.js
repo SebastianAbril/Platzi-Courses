@@ -17,17 +17,17 @@ export default createTheme({
         }
     },
     typography:{
-       tab:{
+        tab:{
         fontFamily:"Raleway",
         textTransform: "none",
         fontWeight: 700,
         fontSize: "1rem",
-       },
-       estimate: {
+        },
+        estimate: {
         fontFamily: "Pacifico",
         fontSize: "1rem",
         textTransform: "none",
         color: "white"
-       }
+            }
     }
 })
