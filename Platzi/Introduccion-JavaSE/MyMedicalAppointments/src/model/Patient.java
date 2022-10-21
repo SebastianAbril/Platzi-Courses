@@ -1,3 +1,7 @@
+package model;
+
+import model.User;
+
 public class Patient extends User {
     int id;
 
@@ -6,7 +10,7 @@ public class Patient extends User {
     private double height;
     String blood;
 
-    Patient(String name, String email){
+    public Patient(String name, String email){
         super(name, email);
         this.weight = 77.7;
 

@@ -1,3 +1,5 @@
+package model;
+
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -13,9 +15,9 @@ public class Doctor extends User {
 
     //Comportamientos
 
-    Doctor(String name, String email, String speciality) {
+    public Doctor(String name, String email, String speciality) {
         super(name,email);
-        System.out.println("El nombre del Doctor asignado es: " + name);
+        System.out.println("El nombre del model.Doctor asignado es: " + name);
         this.speciality = speciality;
     }
 
@@ -32,7 +34,7 @@ public class Doctor extends User {
         System.out.println(getName());
     }
     public void showId(){
-        System.out.println("ID Doctor: "+id);
+        System.out.println("ID model.Doctor: "+id);
     }
     ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
     public void addAvailableAppointment (Date date, String time){
@@ -86,10 +88,10 @@ public class Doctor extends User {
 
 /**
  * Declarando un objeto
- * Doctor myDoctor;
+ * model.Doctor myDoctor;
  * tipo de objeto - Nombre del objeto
  *
- * myDoctor = new Doctor();
+ * myDoctor = new model.Doctor();
  *
  * Los metodos con final o static no se pueden sobre escribir
  */

@@ -1,3 +1,5 @@
+package model;
+
 public class User {
     private final int id = 0;
     private String name;
