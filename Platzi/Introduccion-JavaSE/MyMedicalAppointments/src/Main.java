@@ -1,4 +1,5 @@
 import model.Doctor;
+import model.ISchedulable;
 import model.Patient;
 import model.User;
 
@@ -16,7 +17,25 @@ public class Main {
        User userPa = new Patient("Hellsito","dogg");
        userPa.showDataUser();
 
-/*
+
+        User user1 = new User("Anahi", "ana@com") {
+            @Override
+            public void showDataUser() {
+                System.out.println("Doctor");
+                System.out.println("Hospital: Cruz Verde");
+                System.out.println("Departamento: Geriatría");
+            }
+        };
+
+        user1.showDataUser();
+
+        ISchedulable iSchedulable = new ISchedulable() {
+            @Override
+            public void schedule(Date date, String time) {
+
+            }
+        };
+    /*
        myDoctor.addAvailableAppointment(new Date(), "4pm");
        myDoctor.addAvailableAppointment(new Date(), "10pm");
        myDoctor.addAvailableAppointment(new Date(), "1pm"); */
@@ -26,7 +45,7 @@ public class Main {
         }
 
 */
-        System.out.println(myDoctor);
+       // System.out.println(myDoctor);
     }
 
 
