@@ -43,4 +43,8 @@ public abstract class User {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
+
+    public abstract void showDataUser();
+
+
 }
