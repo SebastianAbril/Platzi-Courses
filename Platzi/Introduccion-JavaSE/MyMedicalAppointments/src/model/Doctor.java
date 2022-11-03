@@ -17,10 +17,9 @@ public class Doctor extends User {
 
     //Comportamientos
 
-    public Doctor(String name, String email, String speciality) {
+    public Doctor(String name, String email) {
         super(name,email);
-        System.out.println("El nombre del model.Doctor asignado es: " + name);
-        this.speciality = speciality;
+
     }
 
     public String getSpeciality() {

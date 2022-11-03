@@ -6,7 +6,7 @@ import model.Patient;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class UIMenu {
+public  class UIMenu {
 
     public static final String[] MONTHS = {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"};
     public static Doctor doctorLogged;
@@ -48,9 +48,9 @@ public class UIMenu {
         //userType = 2 Patient
 
         ArrayList<Doctor> doctors = new ArrayList<>();
-        doctors.add(new Doctor("Alejandro Martinez", "alejandro@gmail.com","oncologia"));
-        doctors.add(new Doctor("Maria Alejandra Sepulveda", "Masepul@gmail.com","pediatria"));
-        doctors.add(new Doctor("Juan Sebastian Abril", "sebasabril@gmail.com", "musculogia"));
+        doctors.add(new Doctor("Alejandro Martinez", "alejandro@gmail.com"));
+        doctors.add(new Doctor("Maria Alejandra Sepulveda", "Masepul@gmail.com"));
+        doctors.add(new Doctor("Juan Sebastian Abril", "sebasabril@gmail.com"));
 
         ArrayList<Patient> patients = new ArrayList<>();
         patients.add(new Patient("Hellsito Abril","hell@gmail.com"));
@@ -68,7 +68,7 @@ public class UIMenu {
                         emailCorrect = true;
                         // Obtener el usuario logeado
                         doctorLogged = d;
-                        //showDoctorMenu
+                        UIDoctorMenu.showDoctorMenu();
                     }
                 }
             }

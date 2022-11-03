@@ -2,13 +2,12 @@ package ui;
 
 import model.Doctor;
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class UiDoctorMenu {
+public class UIDoctorMenu {
 
-    public static ArrayList <Doctor> doctorsAvailableAppointments = new ArrayList<>;
+    public static ArrayList<Doctor> doctorsAvailableAppointments = new ArrayList<>();
     public static void showDoctorMenu(){
         int response = 0;
         do {
@@ -24,8 +23,9 @@ public class UiDoctorMenu {
 
             switch (response){
                 case 1:
+                    showAddAvailableAppointmentMenu();
                     break;
-                case 2;
+                case 2:
                     break;
                 case 0:
                     UIMenu.showMenu();
@@ -54,7 +54,7 @@ public class UiDoctorMenu {
             if(response > 0 && response < 4){
                 //1,2,3
                 int monthSelected = response;
-                System.out.println(monthSelected + " . " + UIMenu.MONTHS[monthSelected]);
+                System.out.println(monthSelected + " . " + UIMenu.MONTHS[monthSelected-1]);
 
                 System.out.println("Insert the date available: [dd/mm/yyyy]");
                 String date = sc.nextLine();

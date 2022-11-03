@@ -5,47 +5,13 @@ import model.User;
 
 import java.util.Date;
 
+import static ui.UIMenu.showMenu;
+
 public class Main {
     public static void main(String[] args) {
 
-       // showMenu();
-       Doctor myDoctor = new Doctor("Irina Abril", "irinaAbril@gmail.com", "Pediatria");
+       showMenu();
 
-       User user = new Doctor ("Sebastian", "Sebastian@gmail.com", "Musculología");
-       user.showDataUser();
-
-       User userPa = new Patient("Hellsito","dogg");
-       userPa.showDataUser();
-
-
-        User user1 = new User("Anahi", "ana@com") {
-            @Override
-            public void showDataUser() {
-                System.out.println("Doctor");
-                System.out.println("Hospital: Cruz Verde");
-                System.out.println("Departamento: Geriatría");
-            }
-        };
-
-        user1.showDataUser();
-
-        ISchedulable iSchedulable = new ISchedulable() {
-            @Override
-            public void schedule(Date date, String time) {
-
-            }
-        };
-    /*
-       myDoctor.addAvailableAppointment(new Date(), "4pm");
-       myDoctor.addAvailableAppointment(new Date(), "10pm");
-       myDoctor.addAvailableAppointment(new Date(), "1pm"); */
-/*
-        for (model.Doctor.AvailableAppointment aA: myDoctor.getAvailableAppointments()){
-            System.out.println(aA.getDate()+" "+aA.getTime());
-        }
-
-*/
-       // System.out.println(myDoctor);
     }
 
 
