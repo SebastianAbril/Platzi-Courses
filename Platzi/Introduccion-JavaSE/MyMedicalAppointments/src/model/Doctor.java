@@ -9,6 +9,7 @@ public class Doctor extends User {
     //Atributos
     static int id = 0; //Autoincrement
     String speciality;
+    ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
 
     private int id_availableAppointment;
     private Date date;
@@ -37,7 +38,7 @@ public class Doctor extends User {
     public void showId(){
         System.out.println("ID model.Doctor: "+id);
     }
-    ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
+
     public void addAvailableAppointment (String date, String time){
 
         availableAppointments.add(new Doctor.AvailableAppointment(date,time));
