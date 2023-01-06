@@ -11,6 +11,19 @@ export class AppComponent {
   lastName = 'Abril'
   age = 30;
   foto = 'https://source.unsplash.com/random'
+  buttonDisabled = true;
+  person = {
+    name: 'Sebastian',
+    age: 30,
+    avatar: 'https://source.unsplash.com/random'
+  }
 
+  toggleButton(){
+    this.buttonDisabled = false;
+  }
+
+  increaseAge(){
+    this.person.age += 1;
+  }
 }
 // LOS ATRIBUTOS TIENEN QUE SER PUBLICOS, TS POR DEFECTO LOS PONE PUBLICOS
