@@ -18,6 +18,13 @@ export class AppComponent {
     avatar: 'https://source.unsplash.com/random'
   }
 
+  names: string[]  = ['Nico','Juli','Santi'];
+  newName = '';
+
+  pets: string[] = ['Sasha','Cleo','Hell']
+  newPet = '';
+
+
   toggleButton(){
     this.buttonDisabled = false;
   }
@@ -34,6 +41,23 @@ export class AppComponent {
   changeName(event: Event){
   const element = event.target as HTMLInputElement;
   this.person.name = element.value;
+  }
+
+  addName(){
+    this.names.push(this.newName);
+    this.newName = '';
+  }
+
+  deleteName(index: number){
+    this.names.splice(index, 1);
+  }
+
+  addPet(){
+    this.pets.push(this.newPet);
+  }
+
+  deletePet(index: number){
+    this.pets.splice(index, 1);
   }
 }
 // LOS ATRIBUTOS TIENEN QUE SER PUBLICOS, TS POR DEFECTO LOS PONE PUBLICOS
