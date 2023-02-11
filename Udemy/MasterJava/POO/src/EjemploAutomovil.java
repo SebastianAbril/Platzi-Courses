@@ -13,13 +13,19 @@ public class EjemploAutomovil {
         mazda.cilindraje = 3.0;
         mazda.color = "Rojo";
 
-        System.out.println("auto.fabricante = " + auto.fabricante);
-        System.out.println("auto.modelo = " + auto.modelo);
-        System.out.println("auto.color = " + auto.color);
-        System.out.println("auto.cilindraje = " + auto.cilindraje);
+        Automovil subaru = new Automovil();
+        subaru.fabricante = "Subaru";
+        subaru.modelo = "Impresa";
+        subaru.cilindraje = 2.0;
+        subaru.color = "Blanco";
 
+
+        System.out.println(auto.detalle());
+        mazda.detalle();
     }
 }
 
 
-/* Programacion estructura/secuencial y POO */
+/* Programacion estructura/secuencial y POO
+* Dentro de una clase nunca se deben imprimir datos, es una mala practica
+* */
