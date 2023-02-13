@@ -20,8 +20,12 @@ public class EjemploAutomovil {
         subaru.color = "Blanco";
 
 
-        System.out.println(auto.detalle());
-        mazda.detalle();
+        System.out.println(auto.verDetalle());
+        mazda.verDetalle();
+        System.out.println(mazda.acelerar(2000));
+        System.out.println(mazda.frenar());
+        System.out.println(mazda.acelerarFrenar(5000));
+
     }
 }
 

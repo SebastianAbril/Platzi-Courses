@@ -4,6 +4,7 @@ public class Automovil {
     String modelo;
     String color = "gris";
     double cilindraje;
+    int capacidadEstanque = 40;
 
    /* public void detalle(){
         System.out.println("auto.fabricante = " + this.fabricante);
@@ -12,16 +13,29 @@ public class Automovil {
         System.out.println("auto.cilindraje = " + this.cilindraje);
     }*/
 
-    public String detalle(){
-        StringBuilder sb = new StringBuilder();
-        sb.append("abricante = " + this.fabricante+" ");
-        sb.append("modelo = " + this.modelo+" ");
-        sb.append("color = " + this.color+" ");
-        sb.append("cilindraje = " + this.cilindraje+" ");
-
-       return sb.toString();
+    public String verDetalle(){
+        return"fabricante = " + this.fabricante +
+                "\nmodelo = " + this.modelo +
+                "\ncolor = " + this.color +
+                "\ncilindraje = " + this.cilindraje;
     }
 
+    public String acelerar(int rpm) {
+        return "el auto " + this.fabricante + " acelerando a " + rpm + "rpm";
+    }
+
+    public String frenar(){
+        return "el auto "+this.fabricante+" frenando";
+    }
+
+    public String acelerarFrenar(int rpm){
+        String acelerar = this.acelerar(rpm);
+        String frenar = this.frenar();
+
+        return acelerar + "\n" + frenar;
+    }
+
+    public float calcularConsumo(int km, float porcentajeBencina)
 }
 
 /* La clase debe ser public o default, no tiene sentido
