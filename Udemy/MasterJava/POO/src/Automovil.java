@@ -35,7 +35,13 @@ public class Automovil {
         return acelerar + "\n" + frenar;
     }
 
-    public float calcularConsumo(int km, float porcentajeBencina)
+    public float calcularConsumo(int km, float porcentajeBencina){
+        return km/(capacidadEstanque*porcentajeBencina);
+    }
+
+    public float calcularConsumo(int km, int porcentajeBencina){
+        return km/(capacidadEstanque*(porcentajeBencina/100f));
+    }
 }
 
 /* La clase debe ser public o default, no tiene sentido
