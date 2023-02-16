@@ -67,7 +67,7 @@ public class EjemploAutomovil {
 /*
 *  CLASE 137: IMPLEMENTANDO CONSTRUCTOR
 *  Se podria hacer una sobrecarga de constructores, es decir hacer varias versiones de constructor. La sobrecarga de metodos
-* es cuando implemento el mismo metodo pero con diferentes argumentos, de esta manera se generan diferentes versiones.
+* es cuando implemento el mismo method, pero con diferentes argumentos, de esta manera se generan diferentes versiones.
 *
 * OJO: Los constructores solo se pueden llamar con el new, no se pueden llamar como si fueran otro metodo
 *
