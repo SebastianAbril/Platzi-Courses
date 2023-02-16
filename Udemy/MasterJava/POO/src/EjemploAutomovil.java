@@ -21,7 +21,12 @@ public class EjemploAutomovil {
         subaru.setCilindraje(2.0);
         subaru.setColor("Blanco");
 
+        Automovil nissan = new Automovil("Nissan","2020","Blanco");
+        Automovil nissan2 = new Automovil("Nissan","2020","Blanco");
+        System.out.println("¿nissan es igual a nissan2? "+ (nissan == nissan2));
+        System.out.println("¿nissan es igual a nissan2 con equals con OVERDIDE? "+ nissan.equals(nissan2));
 
+        /*
         System.out.println(auto.verDetalle());
         mazda.verDetalle();
         System.out.println(mazda.acelerar(2000));
@@ -31,7 +36,7 @@ public class EjemploAutomovil {
         System.out.println("Kilometros por litro "+ subaru.calcularConsumo(300,0.75f));
         System.out.println("Kilometros por litro "+ subaru.calcularConsumo(300,60));
 
-        System.out.println("Fabricante es: "+auto.getFabricante());
+        System.out.println("Fabricante es: "+auto.getFabricante()); */
     }
 }
 
@@ -71,4 +76,9 @@ public class EjemploAutomovil {
 *
 * OJO: Los constructores solo se pueden llamar con el new, no se pueden llamar como si fueran otro metodo
 *
+* */
+
+/*
+* CLASE 139: El método Equals.
+* Todos los objetos de Java son Unicos y distintos
 * */
