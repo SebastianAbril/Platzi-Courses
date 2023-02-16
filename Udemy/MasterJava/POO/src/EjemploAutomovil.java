@@ -3,21 +3,23 @@ public class EjemploAutomovil {
 
         Automovil auto = new Automovil();
 
-        auto.fabricante = "Subaru";
-        auto.modelo = "Impresa";
-        auto.cilindraje = 2.0;
-        auto.color = "Blanco";
+        auto.setFabricante("Subaru");
+        auto.setModelo("Impresa");
+        auto.setCilindraje(2.0);
+        auto.setColor("Blanco");
+
+
 
         Automovil mazda = new Automovil();
-        mazda.fabricante = "Mazda";
-        mazda.cilindraje = 3.0;
-        mazda.color = "Rojo";
+        mazda.setFabricante("Mazda");
+        mazda.setCilindraje(3.0);
+        mazda.setColor("Rojo");
 
         Automovil subaru = new Automovil();
-        subaru.fabricante = "Subaru";
-        subaru.modelo = "Impresa";
-        subaru.cilindraje = 2.0;
-        subaru.color = "Blanco";
+        subaru.setFabricante("Subaru");
+        subaru.setModelo("Impresa");
+        subaru.setCilindraje(2.0);
+        subaru.setColor("Blanco");
 
 
         System.out.println(auto.verDetalle());
@@ -28,6 +30,8 @@ public class EjemploAutomovil {
 
         System.out.println("Kilometros por litro "+ subaru.calcularConsumo(300,0.75f));
         System.out.println("Kilometros por litro "+ subaru.calcularConsumo(300,60));
+
+        System.out.println("Fabricante es: "+auto.getFabricante());
     }
 }
 
@@ -42,4 +46,14 @@ public class EjemploAutomovil {
 * acelerarFrenar() pero yo no sé qué hace exactamente el método ni como está implementado.
 *
 * POLIMORFISMO: Diferente forma de hacer lo mismo:
+* */
+
+/*
+*   CLASE 135: PRINCIPIO DE OCULTACIÓN DE LOS ATRIBUTOS
+*
+* Como buena practica y principio los atributos de la clase tienen que ser privados y solamente se puedan
+* exponer para editar y leer mediante metodos.
+*
+* Cuando es privado solamente se puede acceder o modificar dentro de la clase. Es decir no podre hacer un objeto.atributo = X cosa
+* o un System.out.println(bjeto.atributo) por fuera de la clase ya que es privado.
 * */

@@ -1,10 +1,10 @@
 public class Automovil {
 
-    String fabricante;
-    String modelo;
-    String color = "gris";
-    double cilindraje;
-    int capacidadEstanque = 40;
+    private String fabricante;
+    private String modelo;
+    private String color = "gris";
+     private double cilindraje;
+     private int capacidadEstanque = 40;
 
    /* public void detalle(){
         System.out.println("auto.fabricante = " + this.fabricante);
@@ -18,6 +18,46 @@ public class Automovil {
                 "\nmodelo = " + this.modelo +
                 "\ncolor = " + this.color +
                 "\ncilindraje = " + this.cilindraje;
+    }
+
+    public void setFabricante(String fabricante){
+        this.fabricante = fabricante;
+    }
+
+    public String getFabricante(){
+        return this.fabricante;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public double getCilindraje() {
+        return cilindraje;
+    }
+
+    public void setCilindraje(double cilindraje) {
+        this.cilindraje = cilindraje;
+    }
+
+    public int getCapacidadEstanque() {
+        return capacidadEstanque;
+    }
+
+    public void setCapacidadEstanque(int capacidadEstanque) {
+        this.capacidadEstanque = capacidadEstanque;
     }
 
     public String acelerar(int rpm) {
