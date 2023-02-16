@@ -57,3 +57,9 @@ public class EjemploAutomovil {
 * Cuando es privado solamente se puede acceder o modificar dentro de la clase. Es decir no podre hacer un objeto.atributo = X cosa
 * o un System.out.println(bjeto.atributo) por fuera de la clase ya que es privado.
 * */
+
+/*
+*   CLASE 136:  OCULTACION METODOS GET Y SET
+*
+*  POJO (Plain Old Java Object)
+* */

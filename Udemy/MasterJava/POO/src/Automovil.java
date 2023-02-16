@@ -14,10 +14,10 @@ public class Automovil {
     }*/
 
     public String verDetalle(){
-        return"fabricante = " + this.fabricante +
-                "\nmodelo = " + this.modelo +
-                "\ncolor = " + this.color +
-                "\ncilindraje = " + this.cilindraje;
+        return"fabricante = " + this.getFabricante() +
+                "\nmodelo = " + this.getModelo() +
+                "\ncolor = " + this.getColor() +
+                "\ncilindraje = " + this.getCilindraje();
     }
 
     public void setFabricante(String fabricante){
