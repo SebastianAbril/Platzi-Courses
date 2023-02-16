@@ -1,10 +1,10 @@
 public class EjemploAutomovil {
     public static void main(String[] args) {
 
-        Automovil auto = new Automovil();
+        Automovil auto = new Automovil("Subaru","Impresa");
 
-        auto.setFabricante("Subaru");
-        auto.setModelo("Impresa");
+        //auto.setFabricante("Subaru");
+        //auto.setModelo("Impresa");
         auto.setCilindraje(2.0);
         auto.setColor("Blanco");
 
@@ -55,11 +55,20 @@ public class EjemploAutomovil {
 * exponer para editar y leer mediante metodos.
 *
 * Cuando es privado solamente se puede acceder o modificar dentro de la clase. Es decir no podre hacer un objeto.atributo = X cosa
-* o un System.out.println(bjeto.atributo) por fuera de la clase ya que es privado.
+* o un System.out.println(ojeto.atributo) por fuera de la clase ya que es privado.
 * */
 
 /*
 *   CLASE 136:  OCULTACION METODOS GET Y SET
 *
 *  POJO (Plain Old Java Object)
+* */
+
+/*
+*  CLASE 137: IMPLEMENTANDO CONSTRUCTOR
+*  Se podria hacer una sobrecarga de constructores, es decir hacer varias versiones de constructor. La sobrecarga de metodos
+* es cuando implemento el mismo metodo pero con diferentes argumentos, de esta manera se generan diferentes versiones.
+*
+* OJO: Los constructores solo se pueden llamar con el new, no se pueden llamar como si fueran otro metodo
+*
 * */

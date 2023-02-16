@@ -1,5 +1,9 @@
 public class Automovil {
 
+    public Automovil(String fabricante, String modelo){
+        this.fabricante = fabricante;
+        this.modelo = modelo;
+    }
     private String fabricante;
     private String modelo;
     private String color = "gris";
