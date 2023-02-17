@@ -21,6 +21,11 @@ public class EjemploAutomovil {
         subaru.setCilindraje(2.0);
         subaru.setColor("Blanco");
 
+        Automovil batimovil = new Automovil();
+        batimovil.setFabricante(null);
+
+
+
         Automovil nissan = new Automovil("Nissan","2020","Blanco");
         Automovil nissan2 = new Automovil("Nissan","2020","Blanco");
         System.out.println("¿nissan es igual a nissan2? "+ (nissan == nissan2));
