@@ -128,6 +128,17 @@ public class Automovil {
         Automovil a = (Automovil) obj;
         return (this.fabricante.equals(a.getFabricante()) && this.modelo.equals(a.getModelo()));
     }
+
+    @Override
+    public String toString() {
+        return "Automovil{" +
+                "fabricante='" + fabricante + '\'' +
+                ", modelo='" + modelo + '\'' +
+                ", color='" + color + '\'' +
+                ", cilindraje=" + cilindraje +
+                ", capacidadEstanque=" + capacidadEstanque +
+                '}';
+    }
 }
 
 /* La clase debe ser public o default, no tiene sentido

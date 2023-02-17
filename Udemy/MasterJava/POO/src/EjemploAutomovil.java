@@ -31,6 +31,8 @@ public class EjemploAutomovil {
         System.out.println("¿nissan es igual a nissan2? "+ (nissan == nissan2));
         System.out.println("¿nissan es igual a nissan2 con equals con OVERDIDE? "+ nissan.equals(nissan2));
 
+        System.out.println("subaru = " + subaru);
+
         /*
         System.out.println(auto.verDetalle());
         mazda.verDetalle();
