@@ -1,7 +1,33 @@
 public class Automovil {
-    public Automovil(){
 
+
+    private String fabricante;
+    private String modelo;
+    private String color = "gris";
+     private double cilindraje;
+     private int capacidadEstanque = 40;
+
+    private static int capacidadEstanqueEstatico = 70;
+
+    public static String getColorPatente() {
+        return colorPatente;
     }
+
+    public static void setColorPatente(String colorPatente) {
+        Automovil.colorPatente = colorPatente;
+    }
+
+    private static String colorPatente = "Naranja";
+
+   /* public void detalle(){
+        System.out.println("auto.fabricante = " + this.fabricante);
+        System.out.println("auto.modelo = " + this.modelo);
+        System.out.println("auto.color = " + this.color);
+        System.out.println("auto.cilindraje = " + this.cilindraje);
+    }*/
+   public Automovil(){
+
+   }
 
 
     public Automovil(String fabricante, String modelo){
@@ -32,24 +58,11 @@ public class Automovil {
         this(fabricante,modelo,color,cilindraje);
         this.capacidadEstanque = capacidadEstanque;
     }
-
-    private String fabricante;
-    private String modelo;
-    private String color = "gris";
-     private double cilindraje;
-     private int capacidadEstanque = 40;
-
-   /* public void detalle(){
-        System.out.println("auto.fabricante = " + this.fabricante);
-        System.out.println("auto.modelo = " + this.modelo);
-        System.out.println("auto.color = " + this.color);
-        System.out.println("auto.cilindraje = " + this.cilindraje);
-    }*/
-
     public String verDetalle(){
         return"fabricante = " + this.getFabricante() +
                 "\nmodelo = " + this.getModelo() +
                 "\ncolor = " + this.getColor() +
+                "\ncolorPatente= "+Automovil.colorPatente  +
                 "\ncilindraje = " + this.getCilindraje();
     }
 
@@ -114,6 +127,10 @@ public class Automovil {
 
     public float calcularConsumo(int km, int porcentajeBencina){
         return km/(capacidadEstanque*(porcentajeBencina/100f));
+    }
+
+    public static float calcularConsumoEstatico(int km, float porcentajeBencina){
+        return km/(Automovil.capacidadEstanqueEstatico*porcentajeBencina);
     }
 
     @Override

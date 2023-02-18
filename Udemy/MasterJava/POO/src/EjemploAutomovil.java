@@ -3,8 +3,6 @@ public class EjemploAutomovil {
 
         Automovil auto = new Automovil("Subaru","Impresa");
 
-        //auto.setFabricante("Subaru");
-        //auto.setModelo("Impresa");
         auto.setCilindraje(2.0);
         auto.setColor("Blanco");
 
@@ -24,26 +22,11 @@ public class EjemploAutomovil {
         Automovil batimovil = new Automovil();
         batimovil.setFabricante(null);
 
+        System.out.println(mazda.verDetalle());
+        System.out.println(subaru.verDetalle());
 
 
-        Automovil nissan = new Automovil("Nissan","2020","Blanco");
-        Automovil nissan2 = new Automovil("Nissan","2020","Blanco");
-        System.out.println("¿nissan es igual a nissan2? "+ (nissan == nissan2));
-        System.out.println("¿nissan es igual a nissan2 con equals con OVERDIDE? "+ nissan.equals(nissan2));
 
-        System.out.println("subaru = " + subaru);
-
-        /*
-        System.out.println(auto.verDetalle());
-        mazda.verDetalle();
-        System.out.println(mazda.acelerar(2000));
-        System.out.println(mazda.frenar());
-        System.out.println(mazda.acelerarFrenar(5000));
-
-        System.out.println("Kilometros por litro "+ subaru.calcularConsumo(300,0.75f));
-        System.out.println("Kilometros por litro "+ subaru.calcularConsumo(300,60));
-
-        System.out.println("Fabricante es: "+auto.getFabricante()); */
     }
 }
 
