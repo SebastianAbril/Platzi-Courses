@@ -1,5 +1,14 @@
 public class Automovil {
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    private int id = 0;
 
     private String fabricante;
     private String modelo;
@@ -8,6 +17,7 @@ public class Automovil {
      private int capacidadEstanque = 40;
 
     private static int capacidadEstanqueEstatico = 70;
+    private static int ultimoId;
 
     public static String getColorPatente() {
         return colorPatente;
@@ -26,11 +36,12 @@ public class Automovil {
         System.out.println("auto.cilindraje = " + this.cilindraje);
     }*/
    public Automovil(){
-
+        this.id = ++ultimoId;
    }
 
 
     public Automovil(String fabricante, String modelo){
+       this();
         this.fabricante = fabricante;
         this.modelo = modelo;
     }
@@ -59,7 +70,8 @@ public class Automovil {
         this.capacidadEstanque = capacidadEstanque;
     }
     public String verDetalle(){
-        return"fabricante = " + this.getFabricante() +
+        return  "id = "+ this.getId()+
+                "\nfabricante = " + this.getFabricante() +
                 "\nmodelo = " + this.getModelo() +
                 "\ncolor = " + this.getColor() +
                 "\ncolorPatente= "+Automovil.colorPatente  +
@@ -130,7 +142,7 @@ public class Automovil {
     }
 
     public static float calcularConsumoEstatico(int km, float porcentajeBencina){
-        return km/(Automovil.capacidadEstanqueEstatico*porcentajeBencina);
+        return km/(Automovil.capacidadEstanqueEstatico*(porcentajeBencina/100f));
     }
 
     @Override

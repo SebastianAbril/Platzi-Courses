@@ -22,11 +22,10 @@ public class EjemploAutomovilStatic {
 
         Automovil batimovil = new Automovil();
         batimovil.setFabricante(null);
-
-
-
         System.out.println(mazda.verDetalle());
         System.out.println(subaru.verDetalle());
+
+        System.out.println("Kilometros por litro(estatico): "+Automovil.calcularConsumoEstatico(300,60));
 
 
 

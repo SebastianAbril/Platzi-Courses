@@ -22,6 +22,7 @@ public class EjemploAutomovil {
         Automovil batimovil = new Automovil();
         batimovil.setFabricante(null);
 
+        System.out.println(auto.verDetalle());
         System.out.println(mazda.verDetalle());
         System.out.println(subaru.verDetalle());
 
