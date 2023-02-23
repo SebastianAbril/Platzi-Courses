@@ -26,6 +26,8 @@ public class EjemploAutomovilStatic {
         System.out.println(subaru.verDetalle());
 
         System.out.println("Kilometros por litro(estatico): "+Automovil.calcularConsumoEstatico(300,60));
+        System.out.println("Velocidad máxima en carretera: "+ Automovil.VELOCIDAD_MAX_CARRETERA);
+        System.out.println("Velocidad máxima en ciudad: "+ Automovil.VELOCIDAD_MAX_CIUDAD);
 
 
 
