@@ -11,13 +11,13 @@ public class EjemploAutomovilStatic {
         Automovil mazda = new Automovil();
         mazda.setFabricante("Mazda");
         mazda.setCilindraje(3.0);
-        mazda.setColor("Rojo");
+        mazda.setColor(Automovil.COLOR_ROJO);
 
         Automovil subaru = new Automovil();
         subaru.setFabricante("Subaru");
         subaru.setModelo("Impresa");
         subaru.setCilindraje(2.0);
-        subaru.setColor("Blanco");
+        subaru.setColor(Automovil.COLOR_BLANCO);
 
 
         Automovil batimovil = new Automovil();

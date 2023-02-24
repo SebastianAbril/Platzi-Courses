@@ -19,8 +19,15 @@ public class Automovil {
     private static int capacidadEstanqueEstatico = 70;
     private static int ultimoId;
 
-    public static final int VELOCIDAD_MAX_CARRETERA = 120;
-    public static final int VELOCIDAD_MAX_CIUDAD = 70;
+    public static final Integer VELOCIDAD_MAX_CARRETERA = 120;
+    public static final Integer VELOCIDAD_MAX_CIUDAD = 70;
+
+    public static final String COLOR_ROJO = "Rojo";
+    public static final String COLOR_AMARILLO = "Amarillo";
+    public static final String COLOR_AZUL = "Azul";
+    public static final String COLOR_GRIS = "Gris";
+    public static final String COLOR_BLANCO = "Blanco";
+
 
     public static String getColorPatente() {
         return colorPatente;
