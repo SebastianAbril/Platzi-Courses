@@ -12,7 +12,7 @@ public class Automovil {
 
     private String fabricante;
     private String modelo;
-    private String color = "gris";
+    private Color color = Color.GRIS;
      private double cilindraje;
      private int capacidadEstanque = 40;
 
@@ -29,15 +29,15 @@ public class Automovil {
     public static final String COLOR_BLANCO = "Blanco";
 
 
-    public static String getColorPatente() {
+    public static Color getColorPatente() {
         return colorPatente;
     }
 
-    public static void setColorPatente(String colorPatente) {
+    public static void setColorPatente(Color colorPatente) {
         Automovil.colorPatente = colorPatente;
     }
 
-    private static String colorPatente = "Naranja";
+    private static Color colorPatente = Color.NARANJO;
 
    /* public void detalle(){
         System.out.println("auto.fabricante = " + this.fabricante);
@@ -56,14 +56,14 @@ public class Automovil {
         this.modelo = modelo;
     }
 
-    public Automovil(String fabricante, String modelo, String color) {
+    public Automovil(String fabricante, String modelo, Color color) {
         //this.fabricante = fabricante;
         //this.modelo = modelo;
         this(fabricante,modelo);
         this.color = color;
     }
 
-    public Automovil(String fabricante, String modelo, String color, double cilindraje) {
+    public Automovil(String fabricante, String modelo, Color color, double cilindraje) {
         //this.fabricante = fabricante;
         //this.modelo = modelo;
         //this.color = color;
@@ -71,7 +71,7 @@ public class Automovil {
         this.cilindraje = cilindraje;
     }
 
-    public Automovil(String fabricante, String modelo, String color, double cilindraje, int capacidadEstanque) {
+    public Automovil(String fabricante, String modelo, Color color, double cilindraje, int capacidadEstanque) {
         //this.fabricante = fabricante;
         //this.modelo = modelo;
         //this.color = color;
@@ -104,11 +104,11 @@ public class Automovil {
         this.modelo = modelo;
     }
 
-    public String getColor() {
+    public Color getColor() {
         return color;
     }
 
-    public void setColor(String color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 
