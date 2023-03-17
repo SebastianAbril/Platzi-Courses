@@ -1,5 +1,7 @@
 package com.sebasabril;
 
+import java.util.Objects;
+
 public class Auto {
 
     private String marca;
@@ -57,5 +59,18 @@ public class Auto {
 
     public void setDominio(String dominio) {
         this.dominio = dominio;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Auto auto = (Auto) o;
+        return anio == auto.anio && km == auto.km && Objects.equals(marca, auto.marca) && Objects.equals(modelo, auto.modelo) && Objects.equals(dominio, auto.dominio);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(marca, modelo, anio, km, dominio);
     }
 }
