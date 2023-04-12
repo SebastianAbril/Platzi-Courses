@@ -48,3 +48,13 @@ public class HibernateMain {
     }
 
 }
+
+/**
+ * CARDINALIDADES
+ *
+ * - de Uno a Uno.
+ * - de Uno a Muchos.
+ * - de Muchos a Uno.
+ * - de Muchos a Muchos.
+ *
+ */
